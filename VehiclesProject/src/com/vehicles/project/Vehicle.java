@@ -15,4 +15,12 @@ public abstract class Vehicle {
 		this.brand = brand;
 		this.color = color;
 	}
+
+	public String getPlate() {
+		return plate;
+	}
+
+	public List<Wheel> getWheels() {
+		return wheels;
+	}
 }

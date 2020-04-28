@@ -8,4 +8,27 @@ public class Wheel {
 		this.brand = brand;
 		this.diameter = diameter;
 	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public double getDiameter() {
+		return diameter;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) {
+			return true;
+		}
+		if (o == null || getClass() != o.getClass()) {
+			return false;
+		}
+		Wheel rueda = (Wheel) o;
+		return brand.equals(rueda.brand) &&
+				diameter == rueda.diameter;
+	}
+
+
 }
